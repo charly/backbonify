@@ -1,0 +1,6 @@
+= form_for <%= singular_name.capitalize %>.new do |f|
+<% attributes.each do |attribute| -%>
+  =f.text_field :<%= attribute.name %>, :placeholder => "<%= attribute.name %>"
+<% end -%>
+
+  = submit_tag

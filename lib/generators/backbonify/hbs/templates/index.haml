@@ -1,0 +1,13 @@
+%table
+  %thead
+    %tr
+<% attributes.each do |attribute| -%>
+      %th <%= attribute.human_name %>
+<% end -%>
+
+  %tbody
+    {{#each collection}}
+    %tr(id="<%= singular_name %>_{{id}}")
+      {{>  <%= singular_name %>_row}}
+    {{/each}}
+
