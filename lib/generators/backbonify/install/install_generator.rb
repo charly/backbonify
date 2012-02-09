@@ -29,6 +29,11 @@ a = %{
 //= require backbone_datalink
 //= require backbone.grid
 //= require #{application_name.underscore}
+
+$(function(){
+  window.app = new #{application_name}.init()
+});
+
 }
         end
       end
