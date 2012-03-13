@@ -10,7 +10,7 @@ module Backbonify
 
 
       def create_views
-        %w(page index show new edit).each do |view|
+        %w(page filter index show new edit).each do |view|
           template "#{view}_view.js", File.join(backbone_path, "views", plural_name, "#{view}_view.js")
         end
       end
