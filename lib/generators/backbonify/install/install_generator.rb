@@ -8,7 +8,9 @@ module Backbonify
       source_root File.expand_path("../templates", __FILE__)
       desc "This generator installs backbone.js with a default folder layout in app/assets/javascripts/backbone"
       class_option :skip_git, :type => :boolean, :aliases => "-G", :default => true,
-                              :desc => "Skip Git ignores and keeps"
+                   :desc => "Skip Git ignores and keeps"
+      class_option :skip_require, :type => :boolean, :aliases => "-R", :default => true,
+                   :desc => "Skip injection of requires in app.js (-U), usefeul for updates"
 
       def copy_javascripts_libs_to_vendor
         directory("../../../../../lib/assets/javascripts/", "vendor/assets/javascripts/", :recursive => true)
@@ -16,6 +18,7 @@ module Backbonify
 
 
       def inject_backbone
+        return if options[:skip_requires]
         inject_into_file "app/assets/javascripts/application.js", :before => "//= require_tree" do
 a = %{
 //= require json2
