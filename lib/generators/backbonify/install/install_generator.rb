@@ -10,7 +10,7 @@ module Backbonify
       class_option :skip_git, :type => :boolean, :aliases => "-G", :default => true,
                    :desc => "Skip Git ignores and keeps"
       class_option :skip_require, :type => :boolean, :aliases => "-R", :default => true,
-                   :desc => "Skip injection of requires in app.js (-U), usefeul for updates"
+                   :desc => "Skip injection of requires in app.js (-R), useful for updates"
 
       def copy_javascripts_libs_to_vendor
         directory("../../../../../lib/assets/javascripts/", "vendor/assets/javascripts/", :recursive => true)
@@ -28,7 +28,7 @@ a = %{
 //= require handlebars.runtime
 //= require underscore
 //= require backbone
-//= require backbone_rails_sync
+// require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone.grid
 //= require #{application_name.underscore}
