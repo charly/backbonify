@@ -1,11 +1,11 @@
 # Backbonify
 A generator for Backbone in Rails >= 3.1. The Language is javascript (no coffee)
-and the template engine is (only) handlebars wraped in haml! However this generator takes advantage of hooks (brought by yehuda in rails 3) so it is easy to add other template
+and the template engine is (only) handlebars wrapped in haml! However this generator takes advantage of hooks (brought by yehuda in rails 3) so it is easy to add other template
 engines and so on...
 
 ## Warning
-This is not a general purpose generator. I made it to fit my needs. And its quit beta.
-But hey it's just generators, not code...
+This is not a general purpose generator. I made it to fit my needs, specially with Views which heavily rely on [backbone.grid][2]. My plan is to make a more generic version later, or gladly accept a pull request that adds one ;-). Regarding templates I'm using handlebars, but it's fairly easy to add another one and use hooks to make the hole thing extremely modular.
+
 
 ## Install with Rails 3.1
 In your Gemfile :
@@ -38,9 +38,10 @@ Include them in your Gemfile
 
 ## Thanks to
 Originally I wanted to fork [backbone-rails][1] to add javascript version
-(instead of cofeescript only). But it was too far a part.
+(instead of coffeescript only). But it was too far a part.
 
 ## License
 This project rocks and uses MIT-LICENSE.
 
 [1]: https://github.com/codebrew/backbone-rails
+[2]: https://github.com/charly/backbone.grid
