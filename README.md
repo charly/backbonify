@@ -29,7 +29,7 @@ backbonify:scaffold hooks on those (sub) generators. You can also cherry pick th
 
 ## What it Looks like (with styling)
 
-![Performances](/charly/backbonify/examples/bb.perf.png)
+![Performances](/charly/backbonify/blob/master/examples/bb.perf.png)
 
 ## Dependencies for haml and handlebars
 Include them in your Gemfile
