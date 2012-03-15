@@ -12,6 +12,7 @@ In your Gemfile :
 
     gem "backbonify", :git => "http://github.com/charly/backbonify"
 
+
 ## Usage
 In your console :
 
@@ -26,15 +27,19 @@ backbonify:scaffold hooks on those (sub) generators. You can also cherry pick th
     rails g backbonify:view Model
     rails g backbonify:template Model field:type ...
 
-## TODO
-test!!! options & more doc on what files it generates....
+## What it Looks like (with styling)
+
+![Performances](/examples/bb.perf.png)
 
 ## Dependencies for haml and handlebars
 Include them in your Gemfile
 
     gem 'handlebars_assets'
     gem 'haml_assets', :git => "http://github.com/infbio/haml_assets"
+    gem 'haml', :git => 'http://github.com/infbio/haml', :branch => 'form_for_fix'
 
+## TODO
+specs ! & examples.
 
 ## Thanks to
 Originally I wanted to fork [backbone-rails][1] to add javascript version
