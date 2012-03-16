@@ -34,7 +34,7 @@ a = %{
 //= require #{application_name.underscore}
 
 $(function(){
-  window.app = new #{application_name}.init()
+  window.app = #{application_name}.init()
 });
 
 }
