@@ -8,16 +8,16 @@ Gem::Specification.new do |s|
   s.name        = "backbonify"
   s.version     = Backbonify::VERSION
   s.authors     = ["Charles Sistovaris"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "http://ruby.simapse.com/"
+  s.email       = ["charlysisto@gmail.com"]
+  s.homepage    = "https://github.com/charly/backbonify"
   s.summary     = "Backbone Generator for Rails >= 3.1"
-  s.description = "TODO: Description of Backbonify."
+  s.description = "A generator for Backbone in Rails >= 3.1. The Language is javascript (no coffee) and the template engine is (only) handlebars wrapped in haml! However this generator takes advantage of hooks (brought by yehuda in rails 3) so it is easy to add other template engines and so on...."
 
-  s.files = Dir["{lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files = Dir["{lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
+  # s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.1"
   # s.add_dependency "jquery-rails"
 
-  s.add_development_dependency "sqlite3"
+  # s.add_development_dependency "sqlite3"
 end

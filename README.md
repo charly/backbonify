@@ -10,7 +10,7 @@ This is not a general purpose generator. I made it to fit my needs, specially wi
 ## Install with Rails 3.1
 In your Gemfile :
 
-    gem "backbonify", :git => "http://github.com/charly/backbonify"
+    gem "backbonify"
 
 
 ## Usage
